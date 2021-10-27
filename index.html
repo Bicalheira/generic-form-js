@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Generic Form</title>
+
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<form class="form">
+			<div class="form__group">
+				<label class="form__label" for="name">name</label>
+
+				<input class="form__input" type="text" name="name" id="name" placeholder="bame" required />
+
+				<span class="form__error">this field is not available</span>
+			</div>
+
+			<div class="form__group">
+				<label class="form__label" for="email">e-mail</label>
+
+				<input class="form__input" type="email" name="email" id="email" placeholder="e-mail" required />
+
+				<span class="form__error">this field is not available</span>
+			</div>
+
+			<div class="form__group">
+				<label class="form__label" for="tel">telephone</label>
+
+				<input class="form__input" type="tel" name="tel" id="tel" placeholder="telephone" required />
+
+				<span class="form__error">this field is not available</span>
+			</div>
+
+			<div class="form__group">
+				<label class="form__label" for="zip">\ip code</label>
+
+				<input class="form__input" type="number" name="zip" id="zip" placeholder="zip code" required />
+
+				<span class="form__error">this field is not available</span>
+			</div>
+
+			<div class="form__group">
+				<label class="form__label" for="state">state</label>
+
+				<select class="form__input" name="state" id="state">
+                    <option value="">Select an option...</option>
+                </select>
+
+				<span class="form__error">this field is not available</span>
+			</div>
+		</form>
+
+		<script src="assets/js/app.js" type="module"></script>
+	</body>
+</html>
